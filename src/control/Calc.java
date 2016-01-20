@@ -17,10 +17,6 @@ public class Calc {
         a.removeAll(b);
         b.removeAll(aTemp);
         a.addAll(b);
-        
-//        ArrayList arrayList = new ArrayList(new HashSet(a));
-//        return new ArrayList(new HashSet(a));
-
         Collections.sort(a);
         return a;
         
@@ -38,23 +34,10 @@ public class Calc {
      * @return
      */
     public List<Integer> listUnion(ArrayList<Integer> a, ArrayList<Integer> b) {
-        //again, we create a copy of a & b to ensure that both methods will get the same data as input
-        
-        
         a.addAll(b);
         ArrayList listCombined = new ArrayList(new HashSet(a));
         Collections.sort(listCombined);
         return listCombined;
-        
-        
-        
-        
-//        List<Integer> intersectionList = listIntersection(new ArrayList(a), new ArrayList(b));
-//
-//        List<Integer> differenceList = listDifference(a, b);
-//        differenceList.addAll(intersectionList);
-//        Collections.sort(differenceList);
-//        return differenceList;
     }
 
 }
