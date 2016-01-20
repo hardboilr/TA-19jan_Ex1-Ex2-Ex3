@@ -47,10 +47,10 @@ public class Data {
     };
 
     /**
-     * Very important to return COPIES of original data.
+     * Very important to return COPIES of original data, BECAUSE:
      *
      * We pass data through to the Calc-methods and would otherwise modify
-     * the original data.
+     * the original data, which would "contaminate" data between methods when these are run in serial.
      *
      * @return
      */
